@@ -42,7 +42,9 @@ En sortie: [
 
  */
 
-function getFoodCategories(foods) {
+const getFoodCategories = foods => {
+  if isVegetarian
+  return foods.map(meal => `${meal.name}`)
 }
 
 
