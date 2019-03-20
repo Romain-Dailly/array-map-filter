@@ -42,10 +42,13 @@ En sortie: [
 
  */
 
-const getFoodCategories = foods => {
-  if isVegetarian
-  return foods.map(meal => `${meal.name}`)
-}
+const getFoodCategories = foods => foods.map(food =>{
+  if (food.isVegetarian){
+    return `${food.food} is suitable for vegetarians`
+  } else {
+    return `${food.food} is not suitable for vegetarians`
+  }
+})
 
 
 
