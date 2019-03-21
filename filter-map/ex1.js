@@ -8,7 +8,7 @@ de personnages de Star Wars (objets), chacun ayant deux propriétés :
 En utilisant filter puis map, la fonction doit renvoyer les noms des Jedis, c'est-à-dire les personnages du côté lumineux (pour ceux qui auraient passé les 40 dernières années dans une caverne en Lozère !)
 
 Tableau en entrée:
-[
+characters = [
   { name: 'Yoda', side: 'light' },
   { name: 'Count Dooku', side: 'dark' },
   { name: 'Obiwan Kenobi', side: 'light' },
@@ -22,7 +22,7 @@ Sortie attendue:
 
 */
 
-function getJedisNames(characters) {
-}
+const getJedisNames = characters => characters.filter(character => character.side === 'light')
+.map(character => character.name);
 
 module.exports = getJedisNames;
