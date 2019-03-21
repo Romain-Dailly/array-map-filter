@@ -50,7 +50,9 @@ Sortie attendue:
 
 */
 
-function getStudentsPerCurriculum(campuses, curriculumName) {
+const getStudentsPerCurriculum = (campuses, curriculumName) =>{
+  campuses.filter(campus => campus.curriculums.name === curriculumName)
 }
+
 
 module.exports = getStudentsPerCurriculum;
