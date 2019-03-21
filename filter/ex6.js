@@ -23,11 +23,16 @@ Sortie attendue:
   "Very useful tutorial, thank you so much!",
   "Which one is better, React or Angular?",
 ]
-
 */
 
-function filterOffensiveComments(comments, bannedWords) {
-}
+const filterOffensiveComments = (comments, bannedWords) => comments.filter(comment =>{
+  for (let i = 0; i < bannedWords.length; i++) {
+    if (comment.toLowerCase().includes(bannedWords[i].toLowerCase())){
+      return null;
+    }
+  }
+  return comment;
+})
 
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;
